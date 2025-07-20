@@ -4,6 +4,7 @@ let choices=document.querySelectorAll(".imagecontainer");
 let messg=document.querySelector("#messg");
 let uscore=document.querySelector("#userscore");
 let cscore=document.querySelector("#compscore");
+let reset=document.querySelector("#reset");
 
 
 
@@ -73,4 +74,11 @@ imagecontainer. addEventListener("click", ()=>{
 
     playgame(userChoice);}
 );
+});
+
+reset.addEventListener("click",()=>{
+    uscore.innerText=0;
+    cscore.innerText=0;
+    messg.innerText="Pick Your Move";
+
 });

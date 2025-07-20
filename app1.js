@@ -23,7 +23,7 @@ const showWinner=(userWin)=>{
       }
     else {
             console.log("You Loose");
-           messg.innerText="You Loose";
+           messg.innerText="You Loose!Better luck next Time";
            compscore++;
            cscore.innerText=compscore;
         }

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent padding and border sizing */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #d6ccc2;
+}
+
+#title {
+    background-color: #1b263b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    height: 100px;
+}
+
+.imagecontainer {
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative; /* Allows hover effect on the container */
+    width: 120px; /* Ensure a defined size */
+    height: 120px; /* Ensure a defined size */
+    background-color: #f0f0f0; /* Add a default background color */
+    border-radius: 2rem;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.imagecontainer:hover {
+    cursor: pointer;
+    background-color:#1b263b; /* Hover color effect */
+}
+
+.imagecontainer img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover; /* Ensures the image fits inside the container */
+    z-index: 1; /* Keeps the image visible */
+    pointer-events: none; /* Allows hover to interact with the container */
+}
+
+
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+    gap: 20px; 
+}
+.scoreboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    overflow: hidden;
+}
+
+.score{
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    background-color:#8093f1 ;
+    color:#323031;
+    
+    
+    overflow: hidden;
+}
+p{
+    font-size: larger;
+    font: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+#userscore{
+    
+    margin-right: 50px;
+    margin-bottom: 40px;
+
+}
+#compscore{
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+.notice{
+    height:200px;
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #8fc0a9;
+}
+
